@@ -5,27 +5,18 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        List<String> fruit = new ArrayList<>();
-        fruit.add("orange");
-        fruit.add("cherry");
-        fruit.add("ananas");
+        fruitList("orange", "cherry", "ananas");
+        vegetablesList("potato", "corn", "pepper");
 
-        List<String> vegetable = new ArrayList<>();
-        vegetable.add("potato");
-        vegetable.add("corn");
-        vegetable.add("pepper");
-
-        fruitList(fruit);
-        vegetablesList(vegetable);
     }
 
-    public static void fruitList(List<String> names) {
+    public static void fruitList(String... names) {
         for (String n : names) {
             System.out.println("Fruit name is: " + n);
         }
     }
 
-    public static void vegetablesList(List<String> names) {
+    public static void vegetablesList(String... names) {
         for (String n : names) {
             System.out.println("Vegetable name is: " + n);
         }
